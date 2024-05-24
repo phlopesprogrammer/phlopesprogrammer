@@ -8,10 +8,10 @@
 
 ## Tecnologias que estudo
 
-[![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
-)]
-[![spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white
-)]
-[![html](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white
-)]
+![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
+)
+![spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white
+)
+![html](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white
+)
 
