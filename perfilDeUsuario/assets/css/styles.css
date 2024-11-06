@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    max-width: 1200px; /* Limita a largura da página */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: #fff;
+}
+
+/* Menu Lateral */
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: #54A7BB;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #dcdcdc;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+nav.menu-lateral:hover {
+    width: 240px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 0.2s;
+}
+
+ul li.item-menu:hover {
+    background: #4A4A4A;
+}
+
+ul li.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Container do conteúdo */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o container ao topo */
+    position: absolute; /* Permite que você posicione o container em relação à tela */
+    top: 0; /* Alinha ao topo */
+    left: 620px; /* Cria o alinhamento com o menu lateral (considerando a largura do menu) */
+    width: calc(100% - 300px); /* Ocupa o restante da largura disponível */
+    max-width: 1200px; /* Largura máxima de 1200px */
+    padding: 16px;
+    padding-top: 30px;
+    background-color: #cccccc;
+    height: 703px;
+}
