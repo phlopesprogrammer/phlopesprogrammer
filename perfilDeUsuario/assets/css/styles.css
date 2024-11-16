@@ -1,80 +1,290 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
 
-/* Estilos gerais */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
-    height: 100%;
-    max-width: 1200px; /* Limita a largura da página */
-    margin: 0 auto; /* Centraliza o conteúdo */
-    background-color: #fff;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    align-items: center;
+}
+.container-body{
+    height: 80%;
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    min-height: 731px;
+    
+
 }
 
-/* Menu Lateral */
-nav.menu-lateral {
-    width: 80px;
-    height: 100%;
-    background-color: #54A7BB;
-    padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #dcdcdc;
-    overflow: hidden;
-    transition: 0.2s;
+.menu-lateral .btn-expandir {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    margin-bottom: 20px;
 }
 
-nav.menu-lateral:hover {
-    width: 240px;
+.menu-lateral .btn-expandir span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
 }
 
-ul {
-    height: 100%;
+nav.menu-lateral ul {
     list-style-type: none;
+    padding: 0;
+    margin-top: 0;
 }
-
+ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+#botao-sair{
+    margin-bottom: 20px;
+}
 ul li.item-menu {
-    transition: 0.2s;
-}
-
-ul li.item-menu:hover {
-    background: #4A4A4A;
+    margin-top: 10px;
 }
 
 ul li.item-menu a {
-    color: #fff;
+    display: flex; /* Corrigir de 'flexbox' para 'flex' */
+    justify-content: flex-start;
+    align-items: center;
+    color: #B5B5BE;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    padding: 8px 20px;
     text-decoration: none;
-    font-size: 16px;
-    padding: 20px 4%;
-    display: flex;
-    margin-bottom: 20px;
-    line-height: 30px;
 }
 
-ul li.item-menu a .txt-link {
-    margin-left: 40px;
+nav.menu-lateral {
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 40px 0;
+    box-shadow: 3px 0 0 #dcdcdc;
+    top: 20px;
+    left: 90px;
+    z-index: 10;
+    
 }
 
 ul li.item-menu a .icon > img {
     width: 30px;
-    margin-left: 10px;
 }
 
-/* Container do conteúdo */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Alinha o container ao topo */
-    position: absolute; /* Permite que você posicione o container em relação à tela */
-    top: 0; /* Alinha ao topo */
-    left: 620px; /* Cria o alinhamento com o menu lateral (considerando a largura do menu) */
-    width: calc(100% - 300px); /* Ocupa o restante da largura disponível */
-    max-width: 1200px; /* Largura máxima de 1200px */
+
+.main-content {
+    margin-left: 280px;
+    
+    width: 100%;
     padding: 16px;
+    background-color: #fff;
+    overflow: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
     padding-top: 30px;
-    background-color: #cccccc;
-    height: 703px;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 1px 200px;
+    
+}
+
+.menu-lateral {
+    width: 250px;
+    background-color: white;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid #A9A9A9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+   
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.item-menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.item-menu .icon {
+    margin-right: 10px;
+}
+
+.item-menu .txt-link {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+.perfil-container {
+    
+    
+    padding: 20px;
+    width: 703px;
+    background-color: white;
+    border: 1px solid #A9A9A9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.foto-perfil {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url(../images/2084_artificiall_fist_breaking_chain_chain_sparking_dark_backgr_4a31c3b1-e1d9-47e7-a64d-2345ed07e26a.png) no-repeat 50% 60% / cover;
+    padding: 30px;
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    position: relative;
+    top: 50px;
+    right: 10px;
+}
+
+.info-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.nickname, .email {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Poppins", serif;
+}
+
+.detalhes-perfil {
+    position: relative;
+    padding: 0px;
+    background-color: #fff;
+    z-index: 1;
+    margin-top: 20px;
+    color: #B5B5BE;
+}
+
+.detalhes-perfil h2,.detalhes-perfil h3 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.detalhes-perfil h3 {
+    color: #B5B5BE;
+}
+
+.info-adicionais {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    color: #B5B5BE;
+}
+
+.info-item .icon {
+    margin-right: 5px;
+    
+}
+
+.estatisticas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo {
+    background-color: #54A7BB;
+    color: black;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.campo:last-child {
+    margin-right: 0;
+}
+
+.campo h4 {
+    line-height: 9px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+}
+
+.campo span {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+    
+}
+
+.item-menu .icon img,
+.info-item .icon img {
+    width: 30px;
+    
+}
+
+@media screen and(max-width:960px){
+    .container-body{
+        flex-direction: column;
+    }
+    
+    .menu-lateral{
+        display: none;
+    }
 }

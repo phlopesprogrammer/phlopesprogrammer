@@ -1,72 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title></title>
-</head>
-<body>
-    <nav class="menu-lateral">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Perfil</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container-body">
+      <nav class="menu-lateral">
         <div class="btn-expandir">
-            <span class="icon"><img src="assets/images/list.svg" alt=""></span>
+          <span>Menu</span>
         </div>
         <ul>
+          <div>
             <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><img src="assets/images/people-fill.svg" alt="Perfil"></span>
-                    <span class="txt-link">Perfil</span>
-                </a>
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/people-fill.svg" alt="Perfil"
+                /></span>
+                <span class="txt-link">Perfil</span>
+              </a>
             </li>
             <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><img src="assets/images/person-lines-fill.svg" alt="Editar Perfil"></span>
-                    <span class="txt-link">Editar Perfil</span>
-                </a>
+              <a href="#">
+                <span class="icon"
+                  ><img
+                    src="assets/images/person-lines-fill.svg"
+                    alt="Editar Perfil"
+                /></span>
+                <span class="txt-link">Editar Perfil</span>
+              </a>
             </li>
             <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><img src="assets/images/heart-fill.svg" alt="Favoritos"></span>
-                    <span class="txt-link">Favoritos</span>
-                </a>
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/heart-fill.svg" alt="Favoritos"
+                /></span>
+                <span class="txt-link">Favoritos</span>
+              </a>
             </li>
             <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><img src="assets/images/currency-exchange.svg" alt="Financeiro"></span>
-                    <span class="txt-link">Financeiro</span>
-                </a>
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/currency-exchange.svg" alt="Financeiro"
+                /></span>
+                <span class="txt-link">Financeiro</span>
+              </a>
             </li>
             <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><img src="assets/images/megaphone-fill.svg" alt="Fale Conosco"></span>
-                    <span class="txt-link">Fale Conosco</span>
-                </a>
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/megaphone-fill.svg" alt="Fale Conosco"
+                /></span>
+                <span class="txt-link">Fale Conosco</span>
+              </a>
             </li>
             <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><img src="assets/images/shield-lock-fill.svg" alt="Privacidade"></span>
-                    <span class="txt-link">Privacidade</span>
-                </a>
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/shield-lock-fill.svg" alt="Privacidade"
+                /></span>
+                <span class="txt-link">Privacidade</span>
+              </a>
             </li>
             <li class="item-menu">
-                <a href="#">
-                    <span class="icon"><img src="assets/images/gear-fill.svg" alt="Configurações"></span>
-                    <span class="txt-link">Configurações</span>
-                </a>
+              <a href="#">
+                <span class="icon"
+                  ><img src="assets/images/gear-fill.svg" alt="Configurações"
+                /></span>
+                <span class="txt-link">Configurações</span>
+              </a>
             </li>
-
-            <li class="item-menu">
-                <a href="#" class="logout">
-                    <span class="icon"><img src="assets/images/box-arrow-right.svg" alt="Sair"></span>
-                    <span class="txt-link">Sair</span>
-                </a>
+          </div>
+          <div>
+            <li class="item-menu" id="botao-sair">
+              <a href="#" class="logout">
+                <span class="icon"
+                  ><img src="assets/images/box-arrow-right.svg" alt="Sair"
+                /></span>
+                <span class="txt-link">Sair</span>
+              </a>
             </li>
-       
-            
-    </nav>
-    <div class="container">
-        <div class="box"></div>
+          </div>
+        </ul>
+      </nav>
+  
+      <div class="perfil-container">
+        <div class="foto-perfil">
+          <img
+            src="assets/images/mulher.png"
+            alt="Foto do Usuário"
+            class="foto"
+          />
+          <div class="info-perfil">
+            <span class="nickname">Maria Helena</span>
+            <span class="email">Maria@exemplo.com</span>
+          </div>
+        </div>
+  
+        <div class="estatisticas">
+          <div class="campo">
+            <h4>Publicações</h4>
+            <span>346</span>
+          </div>
+          <div class="campo">
+            <h4>Seguidores</h4>
+            <span>1,203</span>
+          </div>
+          <div class="campo">
+            <h4>Seguindo</h4>
+            <span>41</span>
+          </div>
+        </div>
+        <hr class="divisao" />
+  
+        <div class="detalhes-perfil">
+          <h2>Maria Helena Barbosa Lopes</h2>
+          <h3>UI/UX Design</h3>
+        </div>
+        <hr class="divisao">
+  
+        <div class="info-adicionais">
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/envelope.svg" alt="Email"
+            /></span>
+            <span class="txt-link">Maria@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/person.svg" alt="Nome de usuário"
+            /></span>
+            <span class="txt-link">Maria_Helena</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/telephone.svg" alt="Telefone"
+            /></span>
+            <span class="txt-link">Telefone (31-98536-1521)</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/globe.svg" alt="País"
+            /></span>
+            <span class="txt-link">Brasil</span>
+          </div>
+          <div class="info-item">
+            <span class="icon"
+              ><img src="assets/images/gender-ambiguous.svg" alt="Sexo"
+            /></span>
+            <span class="txt-link">Feminino</span>
+          </div>
+        </div>
+      </div>
     </div>
-   
-</body>
-</html>
+
+    
